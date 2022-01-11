@@ -1,0 +1,598 @@
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+
+/* Reset box-model and set borders */
+/* ============================================ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+
+/**
+ * Prevent vertical alignment issues.
+ */
+
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+
+
+/* ここから記述 */
+
+html {
+    font-size: 10px;
+}
+
+header{
+    width: 100%;
+    
+}
+
+header img{
+    width: 100%;
+}
+
+.nav{
+    width: 100%;  
+    
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.nav ul li {
+    text-align: center;
+    float: left;
+    width: 20%;
+}   
+
+.nav ul li a{
+    display: block;
+    color: #fff;
+	margin: 0;
+	padding: 1.8rem;
+    text-decoration: none;
+    background-color: #39c;
+    border: 0.1rem solid #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.top {
+    font-size: 3.0rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.wrap {
+    float: left;
+    width: 75%;
+    padding: 0 10.0rem 2.0rem;
+}
+.wrap p {
+    font-size: 2.0rem;
+    line-height: 2em;
+}
+
+.wrap h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #39c;
+    color: #fff;
+}
+
+.topMenu {
+    padding: 0 7.0rem 0 0;
+    border-right: 0.1rem solid #39c;
+}
+
+.self-introdution {
+    display: flex;
+    margin-top: 3.0rem;
+}
+
+.self-introdution img {
+    width: 45%;
+}
+
+.self-introdution ul h3{   
+    margin-left: 5.0rem;
+    font-size: 2.3rem;
+    line-height: 3em;
+    font-weight: bold;
+}
+
+.self-introdution ul p{
+    font-size: 2.0rem;
+    margin-left: 10.0rem;
+}
+
+.self-introdution2 h2 {
+    font-size: 2.3rem;
+    line-height: 3em;
+    font-weight: bold;
+}
+
+.inquiry label{
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 3em;
+}
+
+
+.inquiry input {
+    margin-left: 17rem;
+    font-size: 2rem;
+}
+
+.inquiry input:last-child {
+    margin-left: 9.rem7;
+}
+
+.inquiry textarea {
+    margin-left: 13.3rem;
+}
+
+#button {
+    font-size: 2rem;
+    margin-left: 65%;
+    background-color: #39c;
+    color: #fff;
+    padding: 1rem 5rem;
+}
+
+#button:hover {
+    background-color: #36f;
+}
+
+#border {
+    border: 0.1rem solid #000;
+}
+
+.side {
+    float: right;
+    width: 25%;
+    text-align: left;
+    padding: 2.0rem 8.0rem 0 0;
+}
+
+.side h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #39c;
+    color: #fff;
+}
+
+.side ul li a{
+    display: block;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    border: 0.1rem solid #39c;
+}
+
+.footer h1{
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    background-color: #39c;
+}
+
+
+@media (max-width: 960px) and (min-width: 479px) {
+    html {
+        font-size: 7px;
+    }
+}
