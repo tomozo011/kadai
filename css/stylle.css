@@ -528,18 +528,17 @@ header img{
     line-height: 3em;
 }
 
+#label {
+    margin-right: 9.5rem;
+}
 
 .inquiry input {
     margin-left: 17rem;
     font-size: 2rem;
 }
 
-.inquiry input:last-child {
-    margin-left: 9.rem7;
-}
-
 .inquiry textarea {
-    margin-left: 13.3rem;
+    margin-left: 21.8rem;
 }
 
 #button {
