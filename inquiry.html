@@ -48,7 +48,7 @@
         console.log(form.name.value);
         console.log(form.sex.value);
         console.log(form.content.value);
-        // console.log(form.flie.value);
+        console.log(form.file.value);
     
         if(form.name.value == ""){
             alert("名前を入力してください");
@@ -58,6 +58,9 @@
         }
         if(form.content.value == ""){
             alert("問い合わせ内容を入力してください");
+        }
+        if(form.file.value == ""){
+            alert("添付ファイルがありません");
         }
     });
 </script>
