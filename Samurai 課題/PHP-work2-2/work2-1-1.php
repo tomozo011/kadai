@@ -143,4 +143,59 @@ echo($min);
 
 var_dump($sort);
 
+
+
+
+
+
+
+
+//ソート
+function max_sort(&$array){
+    $temp=0;  //値一時保管用
+    for($i=0;$i<(count($array)-1);$i++){
+      for($j=$i+1;$j<(count($array));$j++){
+        if($array[$i]>$array[$j]){
+          $temp=$array[$i];
+          $array[$i]=$array[$j];
+          $array[$j]=$temp;
+        }
+      }
+    }
+  }
+  //最大値を返す
+  function max_date($array){
+    $answer=$array[0];
+    for($i=1;$i<count($array);$i++){
+      if($array[$i]>$answer){
+        $answer=$array[$i];
+      }
+    }
+    return $answer;
+  }
+  //最小値を返す
+  function min_date($array){
+    $answer=$array[0];
+    for($i=1;$i<count($array);$i++){
+      if($array[$i]<$answer){
+        $answer=$array[$i];
+      }
+    }
+    return $answer;
+  }
+  
+  //変数宣言
+  $array=[60,50,90,70,80,45];
+  
+  //最大値を返す
+  print(max_date($array)."\n");
+  //最小値を返す
+  print(min_date($array)."\n");
+  //ソート
+  max_sort($array);
+  //ソートした結果を表示
+  print("小さいもの順でソート\n");
+  foreach($array as $i){
+    print($i." "."\n");
+  }
 ?>
