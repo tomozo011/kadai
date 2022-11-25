@@ -7,23 +7,32 @@ $items = [
 ];
 
 // 在庫多い順
-function stock($arr){
-    $i = 0;
-    foreach($arr as $key => $value){
-        $i++;
-        if($i === 1){
-            $stock = array($value['stock']);
-            $name = array($value['name']);
-        }else{
-            array_push($stock, $value['stock']);
-            array_push($name, $value['name']);
-        }  
-    }   
-    array_multisort($stock, $name);
-    var_dump($name,$stock);
-    echo '<br>';
-}
-stock($items);
+
+// function stock($arr){
+//     $i = 0;
+//     foreach($arr as $key => $value){
+//         $i++;
+//         if($i === 1){
+//             $stock = array($value['stock']);
+//             $name = array($value['name']);
+//         }else{
+//             array_push($stock, $value['stock']);
+//             array_push($name, $value['name']);
+//         }  
+//     }   
+//     array_multisort($stock, $name);
+//     var_dump($name,$stock);
+//     echo '<br>';
+// }
+// stock($items);
+
+$stocks = array_column($items, 'stock');
+$names = array_column($items, 'name');
+array_multisort($stocks, SORT_DESC, 
+                $names,  SORT_DESC);
+    var_dump($stocks,$names);
+
+
 
 // !----------------------------------------------
 
